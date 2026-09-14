@@ -1,0 +1,10 @@
+# One extension ID per line. Comment lines start with #.
+# Find IDs on the marketplace page URL or via: code --list-extensions
+
+esbenp.prettier-vscode
+dbaeumer.vscode-eslint
+prisma.prisma
+bradlc.vscode-tailwindcss
+eamodio.gitlens
+ms-azuretools.vscode-docker
+ms-python.python
