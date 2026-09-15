@@ -32,7 +32,7 @@ declare -A MODULES=(
   [dev]="Programmer Suite (C/C++, Rust, Go, Python, Node, Java, Docker, SQLite, Postgres, VS Code)"
   [student]="Student & Academic Suite (Obsidian, Zotero, LibreOffice, Xournal++, Draw.io)"
   [security]="Security Researcher Suite (Nmap, Wireshark, Burp Suite, ZAP, Ghidra, KVM/VirtualBox)"
-  [apps]="Everyday Desktop Apps via Flatpak (Firefox, Discord, Telegram, VLC, Spotify, GIMP, OBS)"
+  [apps]="GUI Desktop Apps & IDEs (Brave, Zen, OBS, Shotcut, qBittorrent, Spotify, AnyDesk, VS Code, Android Studio, Kiro Dev)"
   [config]="Final Configuration (Git identity, SSH keygen, aliases, wrap-up)"
 )
 ORDER=(system terminal dev student security apps config)

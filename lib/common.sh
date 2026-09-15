@@ -181,3 +181,54 @@ confirm() {
   reply=${reply:-Y}
   [[ "$reply" =~ ^[Yy]$ ]]
 }
+
+# Ask yes/no, default no. Usage: confirm_no "Pin to taskbar?" && do_thing
+confirm_no() {
+  local prompt="${1:-Continue?} [y/N] "
+  local reply
+  read -rp "$prompt" reply
+  reply=${reply:-N}
+  [[ "$reply" =~ ^[Yy]$ ]]
+}
+
+# Pin an application (.desktop file ID or name) to the user's desktop taskbar/dock
+# Supports GNOME Shell and KDE Plasma; safe and idempotent.
+pin_to_desktop_taskbar() {
+  local app_desktop="$1"
+  [[ -z "$app_desktop" ]] && return 0
+
+  # Ensure .desktop extension
+  [[ "$app_desktop" != *.desktop ]] && app_desktop="${app_desktop}.desktop"
+
+  local desktop="${XDG_CURRENT_DESKTOP:-${DESKTOP_SESSION:-}}"
+
+  # 1. GNOME / Ubuntu Dash
+  if [[ "$desktop" =~ (GNOME|Ubuntu) ]] && command -v gsettings &>/dev/null; then
+    local current_favs
+    current_favs=$(gsettings get org.gnome.shell favorite-apps 2>/dev/null || echo "[]")
+    if [[ "$current_favs" != *"$app_desktop"* ]]; then
+      if [[ "$current_favs" == "[]" || "$current_favs" == "@as []" ]]; then
+        gsettings set org.gnome.shell favorite-apps "['$app_desktop']" 2>/dev/null || true
+      else
+        local updated_favs="${current_favs%]}, '$app_desktop']"
+        gsettings set org.gnome.shell favorite-apps "$updated_favs" 2>/dev/null || true
+      fi
+      ok "Pinned $app_desktop to GNOME Dash"
+    fi
+    return 0
+  fi
+
+  # 2. KDE Plasma Task Manager
+  if [[ "$desktop" =~ (KDE|plasma) ]]; then
+    local plasma_cfg="$HOME/.config/plasma-org.kde.plasma.desktop-appletsrc"
+    if [[ -f "$plasma_cfg" ]]; then
+      if ! grep -q "$app_desktop" "$plasma_cfg" 2>/dev/null; then
+        sed -i "/^launchers=/ s/$/,applications:${app_desktop}/" "$plasma_cfg" 2>/dev/null || true
+        ok "Pinned $app_desktop to KDE Plasma Taskbar"
+      fi
+    fi
+    return 0
+  fi
+
+  info "Application $app_desktop is ready in your Application Menu."
+}

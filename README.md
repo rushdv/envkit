@@ -43,7 +43,7 @@ Enter numbers separated by space (e.g. '1 2 3 7' or '1 2 4 6 7'), or press Enter
   [3] dev      — Programmer Suite (C/C++, Rust, Go, Python, Node, Java, Docker, SQLite, Postgres, VS Code)
   [4] student  — Student & Academic Suite (Obsidian, Zotero, LibreOffice, Xournal++, Draw.io)
   [5] security — Security Researcher Suite (Nmap, Wireshark, Burp Suite, ZAP, Ghidra, KVM/VirtualBox)
-  [6] apps     — Everyday Desktop Apps via Flatpak (Firefox, Discord, Telegram, VLC, Spotify, GIMP, OBS)
+  [6] apps     — GUI Desktop Apps & IDEs (Brave, Zen, OBS, Shotcut, qBittorrent, Spotify, AnyDesk, VS Code, Android Studio, Kiro Dev)
   [7] config   — Final Configuration (Git identity, SSH keygen, aliases, wrap-up)
 
 Your choice:
@@ -90,8 +90,13 @@ Your choice:
 - **Auditing**: Hashcat, John the Ripper.
 - **Virtualization**: Native QEMU / KVM / virt-manager (recommended) or VirtualBox (automated non-interactive setup).
 
-### 6. `apps` (Everyday Desktop Apps via Flatpak)
-- Mozilla Firefox, Discord, Telegram Desktop, VLC Media Player, Spotify, OBS Studio, GIMP, Flatseal.
+### 6. `apps` (GUI Desktop Applications & IDEs)
+- **Web Browsers**: Brave Browser, Zen Browser, Tor Browser, Mozilla Firefox.
+- **Media & Content Creation**: OBS Studio, Shotcut Video Editor, Spotify, VLC Media Player, GIMP.
+- **Productivity & Utilities**: qBittorrent, Obsidian, Bitwarden, Telegram Desktop, Discord, AnyDesk, Flatseal.
+- **IDEs & Developer GUI**: Visual Studio Code, Android Studio, VirtualBox, Antigravity IDE, Kiro Dev.
+- **Interactive Category Selection**: Pick and choose categories (Browsers, Media, Productivity, IDEs) or install the complete workstation suite.
+- **Taskbar Permission Guard**: Explicitly asks for confirmation (`[y/N]`, default No) before pinning any apps to your desktop taskbar/dock (supports GNOME & KDE Plasma), ensuring your taskbar is never modified without your consent.
 
 ### 7. `config` (Final Configuration & Wrap-up)
 - Git global user identity (`user.name`, `user.email`, `init.defaultBranch`).
