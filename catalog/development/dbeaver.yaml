@@ -1,0 +1,22 @@
+id: dbeaver
+name: DBeaver Community
+description: Universal database tool for developers, database administrators, and
+  analysts
+category: development
+tags:
+- database
+- gui
+- sql
+- postgres
+- mysql
+homepage: https://dbeaver.io/
+icon: dbeaver
+source_preference: flatpak
+packages:
+  arch: dbeaver
+  flatpak:
+    id: io.dbeaver.DBeaverCommunity
+detection:
+  commands:
+  - dbeaver
+  flatpak: io.dbeaver.DBeaverCommunity

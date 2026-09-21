@@ -1,0 +1,14 @@
+id: creator
+name: Content Creator & Media
+description: Video editing, streaming, image manipulation, and audio suite
+apps:
+  - obs-studio
+  - vlc
+  - gimp
+  - shotcut
+  - spotify
+config:
+  git_identity: false
+  ssh_keygen: false
+  symlink_dotfiles: false
+  nerd_fonts: false

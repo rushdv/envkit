@@ -1,0 +1,24 @@
+id: docker
+name: Docker
+description: Pack, ship and run any application as a lightweight container
+category: development
+tags:
+- containers
+- devops
+- docker
+- server
+homepage: https://www.docker.com/
+icon: docker
+source_preference: native
+packages:
+  fedora: docker-ce
+  arch: docker
+  debian: docker.io
+  opensuse: docker
+detection:
+  commands:
+  - docker
+post_install:
+- group: docker
+- service: docker
+reboot_recommended: true

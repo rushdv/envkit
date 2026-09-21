@@ -1,0 +1,20 @@
+id: eza
+name: eza
+description: Modern, maintained replacement for ls with colors, icons, and git status
+category: terminal
+tags:
+- ls
+- files
+- icons
+- cli
+homepage: https://github.com/eza-community/eza
+icon: utilities-terminal
+source_preference: native
+packages:
+  fedora: eza
+  arch: eza
+  debian: eza
+  opensuse: eza
+detection:
+  commands:
+  - eza

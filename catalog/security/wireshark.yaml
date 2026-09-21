@@ -1,0 +1,24 @@
+id: wireshark
+name: Wireshark
+description: "The world\u2019s foremost and widely-used network protocol analyzer"
+category: security
+tags:
+- security
+- packet
+- pcap
+- sniffer
+- network
+homepage: https://www.wireshark.org/
+icon: wireshark
+source_preference: native
+packages:
+  fedora: wireshark
+  arch: wireshark-qt
+  debian: wireshark
+  opensuse: wireshark
+detection:
+  commands:
+  - wireshark
+post_install:
+- group: wireshark
+reboot_recommended: true

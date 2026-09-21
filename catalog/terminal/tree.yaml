@@ -1,0 +1,21 @@
+id: tree
+name: tree
+description: Recursive directory listing program that produces a depth indented listing
+  of files
+category: terminal
+tags:
+- files
+- directory
+- hierarchy
+- cli
+homepage: http://mama.indstate.edu/users/ice/tree/
+icon: utilities-terminal
+source_preference: native
+packages:
+  fedora: tree
+  arch: tree
+  debian: tree
+  opensuse: tree
+detection:
+  commands:
+  - tree

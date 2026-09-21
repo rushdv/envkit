@@ -1,0 +1,23 @@
+id: obs-studio
+name: OBS Studio
+description: Free and open source software for video recording and live streaming
+category: media
+tags:
+- streaming
+- recording
+- video
+- broadcast
+homepage: https://obsproject.com/
+icon: com.obsproject.Studio
+source_preference: flatpak
+packages:
+  fedora: obs-studio
+  arch: obs-studio
+  debian: obs-studio
+  opensuse: obs-studio
+  flatpak:
+    id: com.obsproject.Studio
+detection:
+  commands:
+  - obs
+  flatpak: com.obsproject.Studio

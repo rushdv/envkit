@@ -1,0 +1,21 @@
+id: fd
+name: fd
+description: Simple, fast, and user-friendly alternative to find
+category: terminal
+tags:
+- find
+- search
+- files
+- cli
+homepage: https://github.com/sharkdp/fd
+icon: utilities-terminal
+source_preference: native
+packages:
+  fedora: fd-find
+  arch: fd
+  debian: fd-find
+  opensuse: fd
+detection:
+  commands:
+  - fd
+  - fdfind

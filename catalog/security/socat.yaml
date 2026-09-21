@@ -1,0 +1,21 @@
+id: socat
+name: socat
+description: Multipurpose relay tool establishing two bidirectional byte streams
+category: security
+tags:
+- network
+- relay
+- socket
+- security
+- cli
+homepage: http://www.dest-unreach.org/socat/
+icon: utilities-terminal
+source_preference: native
+packages:
+  fedora: socat
+  arch: socat
+  debian: socat
+  opensuse: socat
+detection:
+  commands:
+  - socat

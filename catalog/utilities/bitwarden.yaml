@@ -1,0 +1,22 @@
+id: bitwarden
+name: Bitwarden
+description: Open source password manager for securely storing and autofilling credentials
+category: utilities
+tags:
+- passwords
+- security
+- vault
+- credentials
+homepage: https://bitwarden.com/
+icon: bitwarden
+source_preference: flatpak
+packages:
+  arch:
+    manager: yay
+    package: bitwarden-bin
+  flatpak:
+    id: com.bitwarden.desktop
+detection:
+  commands:
+  - bitwarden
+  flatpak: com.bitwarden.desktop

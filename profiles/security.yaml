@@ -1,0 +1,21 @@
+id: security
+name: Security Researcher
+description: Network analysis, web app auditing, reverse engineering, and pentesting toolkit
+apps:
+  - nmap
+  - wireshark
+  - tcpdump
+  - burpsuite
+  - zap
+  - ghidra
+  - jadx
+  - hashcat
+  - john
+  - socat
+  - whois
+  - ncat
+config:
+  git_identity: false
+  ssh_keygen: false
+  symlink_dotfiles: false
+  nerd_fonts: true

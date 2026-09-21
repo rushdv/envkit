@@ -1,0 +1,22 @@
+id: anydesk
+name: AnyDesk
+description: Fast and smooth remote desktop connectivity software
+category: utilities
+tags:
+- remote
+- desktop
+- support
+- screen-sharing
+homepage: https://anydesk.com/
+icon: anydesk
+source_preference: flatpak
+packages:
+  arch:
+    manager: yay
+    package: anydesk-bin
+  flatpak:
+    id: com.anydesk.Anydesk
+detection:
+  commands:
+  - anydesk
+  flatpak: com.anydesk.Anydesk

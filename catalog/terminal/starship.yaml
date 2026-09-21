@@ -1,0 +1,21 @@
+id: starship
+name: Starship Prompt
+description: Minimal, blazing-fast, and infinitely customizable prompt for any shell
+category: terminal
+tags:
+- prompt
+- starship
+- shell
+- zsh
+- bash
+homepage: https://starship.rs/
+icon: utilities-terminal
+source_preference: script
+packages:
+  arch: starship
+  script:
+    command: curl -sS https://starship.rs/install.sh | sh -s -- -y
+    requires_sudo: true
+detection:
+  commands:
+  - starship

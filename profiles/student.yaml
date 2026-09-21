@@ -1,0 +1,16 @@
+id: student
+name: Student & Academic
+description: Tools for research papers, notes, study, document editing, and diagramming
+apps:
+  - firefox
+  - obsidian
+  - zotero
+  - libreoffice
+  - okular
+  - xournalpp
+  - drawio
+config:
+  git_identity: false
+  ssh_keygen: false
+  symlink_dotfiles: false
+  nerd_fonts: false

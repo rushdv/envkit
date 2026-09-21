@@ -1,0 +1,21 @@
+id: flatseal
+name: Flatseal
+description: Graphical utility to review and modify basic permissions from your Flatpak
+  applications
+category: utilities
+tags:
+- flatpak
+- permissions
+- sandbox
+- security
+homepage: https://github.com/tchx84/Flatseal
+icon: com.github.tchx84.Flatseal
+source_preference: flatpak
+packages:
+  arch: flatseal
+  flatpak:
+    id: com.github.tchx84.Flatseal
+detection:
+  commands:
+  - flatseal
+  flatpak: com.github.tchx84.Flatseal

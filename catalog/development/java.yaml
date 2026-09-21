@@ -1,0 +1,22 @@
+id: java
+name: Java (OpenJDK LTS)
+description: Open-source implementation of the Java Platform, Standard Edition
+category: development
+tags:
+- java
+- openjdk
+- jvm
+- backend
+- android
+homepage: https://openjdk.org/
+icon: java
+source_preference: native
+packages:
+  fedora: java-latest-openjdk-devel
+  arch: jdk-openjdk
+  debian: default-jdk
+  opensuse: java-17-openjdk-devel
+detection:
+  commands:
+  - javac
+  - java

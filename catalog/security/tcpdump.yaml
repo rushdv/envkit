@@ -1,0 +1,21 @@
+id: tcpdump
+name: tcpdump
+description: Powerful command-line packet analyzer for network traffic inspection
+category: security
+tags:
+- network
+- packets
+- sniffer
+- security
+- cli
+homepage: https://www.tcpdump.org/
+icon: utilities-terminal
+source_preference: native
+packages:
+  fedora: tcpdump
+  arch: tcpdump
+  debian: tcpdump
+  opensuse: tcpdump
+detection:
+  commands:
+  - tcpdump

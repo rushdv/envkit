@@ -1,0 +1,21 @@
+id: sqlite
+name: SQLite
+description: C-language library that implements a small, fast, self-contained SQL
+  database engine
+category: development
+tags:
+- sql
+- database
+- sqlite
+- embedded
+homepage: https://www.sqlite.org/
+icon: sqlite
+source_preference: native
+packages:
+  fedora: sqlite
+  arch: sqlite
+  debian: sqlite3
+  opensuse: sqlite3
+detection:
+  commands:
+  - sqlite3

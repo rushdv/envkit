@@ -1,0 +1,22 @@
+id: clang
+name: Clang & LLVM
+description: C, C++, and Objective-C compiler front-end for LLVM
+category: development
+tags:
+- c
+- cpp
+- llvm
+- clang
+- compiler
+homepage: https://clang.llvm.org/
+icon: utilities-terminal
+source_preference: native
+packages:
+  fedora: clang
+  arch: clang
+  debian: clang
+  opensuse: clang
+detection:
+  commands:
+  - clang
+  - clang++

@@ -1,0 +1,23 @@
+id: telegram
+name: Telegram Desktop
+description: Fast, secure, and synchronized messaging application for desktop
+category: communication
+tags:
+- chat
+- messaging
+- telegram
+- communication
+homepage: https://desktop.telegram.org/
+icon: telegram
+source_preference: flatpak
+packages:
+  fedora: telegram-desktop
+  arch: telegram-desktop
+  debian: telegram-desktop
+  opensuse: telegram-desktop
+  flatpak:
+    id: org.telegram.desktop
+detection:
+  commands:
+  - telegram-desktop
+  flatpak: org.telegram.desktop

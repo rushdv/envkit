@@ -1,0 +1,21 @@
+id: hashcat
+name: Hashcat
+description: World's fastest and most advanced password recovery utility
+category: security
+tags:
+- password
+- cracking
+- gpu
+- hashes
+- security
+homepage: https://hashcat.net/hashcat/
+icon: utilities-terminal
+source_preference: native
+packages:
+  fedora: hashcat
+  arch: hashcat
+  debian: hashcat
+  opensuse: hashcat
+detection:
+  commands:
+  - hashcat

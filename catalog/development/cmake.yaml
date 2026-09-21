@@ -1,0 +1,20 @@
+id: cmake
+name: CMake
+description: Cross-platform open-source build system generator
+category: development
+tags:
+- build
+- cmake
+- c
+- cpp
+homepage: https://cmake.org/
+icon: cmake
+source_preference: native
+packages:
+  fedora: cmake
+  arch: cmake
+  debian: cmake
+  opensuse: cmake
+detection:
+  commands:
+  - cmake

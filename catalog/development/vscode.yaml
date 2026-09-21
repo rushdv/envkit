@@ -1,0 +1,24 @@
+id: vscode
+name: Visual Studio Code
+description: Extensible code editor and IDE developed by Microsoft
+category: development
+tags:
+- editor
+- ide
+- microsoft
+- code
+- programming
+homepage: https://code.visualstudio.com/
+icon: code
+source_preference: native
+packages:
+  fedora: code
+  arch: code
+  debian: code
+  opensuse: code
+  flatpak:
+    id: com.visualstudio.code
+detection:
+  commands:
+  - code
+  flatpak: com.visualstudio.code

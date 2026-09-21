@@ -1,0 +1,23 @@
+id: qbittorrent
+name: qBittorrent
+description: Free and reliable P2P BitTorrent client written in C++ / Qt
+category: utilities
+tags:
+- torrent
+- p2p
+- download
+- bittorrent
+homepage: https://www.qbittorrent.org/
+icon: qbittorrent
+source_preference: native
+packages:
+  fedora: qbittorrent
+  arch: qbittorrent
+  debian: qbittorrent
+  opensuse: qbittorrent
+  flatpak:
+    id: org.qbittorrent.qBittorrent
+detection:
+  commands:
+  - qbittorrent
+  flatpak: org.qbittorrent.qBittorrent

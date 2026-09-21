@@ -1,0 +1,23 @@
+id: android-studio
+name: Android Studio
+description: Official Integrated Development Environment for Android app development
+category: development
+tags:
+- android
+- mobile
+- ide
+- kotlin
+- java
+homepage: https://developer.android.com/studio
+icon: android-studio
+source_preference: flatpak
+packages:
+  arch:
+    manager: yay
+    package: android-studio
+  flatpak:
+    id: com.google.AndroidStudio
+detection:
+  commands:
+  - studio.sh
+  flatpak: com.google.AndroidStudio

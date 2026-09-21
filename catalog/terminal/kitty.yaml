@@ -1,0 +1,20 @@
+id: kitty
+name: Kitty Terminal
+description: Fast, feature-rich, GPU-based terminal emulator
+category: terminal
+tags:
+- terminal
+- emulator
+- gpu
+- kitty
+homepage: https://sw.kovidgoyal.net/kitty/
+icon: kitty
+source_preference: native
+packages:
+  fedora: kitty
+  arch: kitty
+  debian: kitty
+  opensuse: kitty
+detection:
+  commands:
+  - kitty

@@ -1,0 +1,20 @@
+id: fzf
+name: fzf
+description: General-purpose command-line fuzzy finder
+category: terminal
+tags:
+- fuzzy
+- search
+- cli
+- terminal
+homepage: https://github.com/junegunn/fzf
+icon: utilities-terminal
+source_preference: native
+packages:
+  fedora: fzf
+  arch: fzf
+  debian: fzf
+  opensuse: fzf
+detection:
+  commands:
+  - fzf

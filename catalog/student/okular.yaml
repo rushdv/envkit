@@ -1,0 +1,24 @@
+id: okular
+name: Okular
+description: Universal document viewer supporting PDF, Postscript, DjVu, CHM, XPS,
+  ePub
+category: student
+tags:
+- pdf
+- viewer
+- documents
+- kde
+homepage: https://okular.kde.org/
+icon: okular
+source_preference: native
+packages:
+  fedora: okular
+  arch: okular
+  debian: okular
+  opensuse: okular
+  flatpak:
+    id: org.kde.okular
+detection:
+  commands:
+  - okular
+  flatpak: org.kde.okular

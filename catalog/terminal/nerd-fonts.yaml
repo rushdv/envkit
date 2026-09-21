@@ -1,0 +1,25 @@
+id: nerd-fonts
+name: JetBrains Mono Nerd Font
+description: Developer font with developer icons and glyphs patched for high-DPI and
+  terminals
+category: terminal
+tags:
+- font
+- icons
+- nerd-fonts
+- starship
+- kitty
+homepage: https://www.nerdfonts.com/
+icon: preferences-desktop-font
+source_preference: script
+packages:
+  arch: ttf-jetbrains-mono-nerd
+  script:
+    command: mkdir -p ~/.local/share/fonts/JetBrainsMonoNerd && curl -fLo /tmp/jb.zip
+      https://github.com/ryanoasis/nerd-fonts/releases/latest/download/JetBrainsMono.zip
+      && unzip -q -o /tmp/jb.zip -d ~/.local/share/fonts/JetBrainsMonoNerd && rm -f
+      /tmp/jb.zip && fc-cache -f ~/.local/share/fonts
+    requires_sudo: false
+detection:
+  paths:
+  - ~/.local/share/fonts/JetBrainsMonoNerd

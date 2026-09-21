@@ -1,0 +1,22 @@
+id: ripgrep
+name: ripgrep (rg)
+description: Line-oriented search tool that recursively searches current directory
+  for a regex pattern
+category: terminal
+tags:
+- grep
+- search
+- regex
+- fast
+- cli
+homepage: https://github.com/BurntSushi/ripgrep
+icon: utilities-terminal
+source_preference: native
+packages:
+  fedora: ripgrep
+  arch: ripgrep
+  debian: ripgrep
+  opensuse: ripgrep
+detection:
+  commands:
+  - rg

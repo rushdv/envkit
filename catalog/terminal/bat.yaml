@@ -1,0 +1,21 @@
+id: bat
+name: bat
+description: Cat clone with syntax highlighting and Git integration
+category: terminal
+tags:
+- cat
+- syntax
+- viewer
+- cli
+homepage: https://github.com/sharkdp/bat
+icon: utilities-terminal
+source_preference: native
+packages:
+  fedora: bat
+  arch: bat
+  debian: bat
+  opensuse: bat
+detection:
+  commands:
+  - bat
+  - batcat

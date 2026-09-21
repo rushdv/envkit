@@ -1,0 +1,22 @@
+id: go
+name: Go (Golang)
+description: Fast, statically typed, compiled language designed for simplicity and
+  scalability
+category: development
+tags:
+- go
+- golang
+- google
+- cloud
+- concurrency
+homepage: https://go.dev/
+icon: go
+source_preference: native
+packages:
+  fedora: golang
+  arch: go
+  debian: golang
+  opensuse: go
+detection:
+  commands:
+  - go

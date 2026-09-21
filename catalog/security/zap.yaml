@@ -1,0 +1,24 @@
+id: zap
+name: OWASP ZAP
+description: "The world\u2019s most widely used web app scanner, free and open source"
+category: security
+tags:
+- security
+- owasp
+- web
+- scanner
+- proxy
+homepage: https://www.zaproxy.org/
+icon: zaproxy
+source_preference: flatpak
+packages:
+  arch:
+    manager: yay
+    package: zaproxy
+  flatpak:
+    id: org.zaproxy.ZAP
+detection:
+  commands:
+  - zap.sh
+  - zaproxy
+  flatpak: org.zaproxy.ZAP

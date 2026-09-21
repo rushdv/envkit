@@ -1,0 +1,22 @@
+id: developer
+name: Developer Suite
+description: Full-stack programming languages, databases, container runtime, and developer tools
+apps:
+  - git
+  - gh
+  - vscode
+  - nodejs
+  - python
+  - docker
+  - docker-compose
+  - postgresql
+  - sqlite
+  - redis
+  - bruno
+  - dbeaver
+config:
+  git_identity: true
+  ssh_keygen: true
+  symlink_dotfiles: true
+  nerd_fonts: true
+  vscode_extensions: true

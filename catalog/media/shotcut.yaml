@@ -1,0 +1,20 @@
+id: shotcut
+name: Shotcut
+description: Free, open source, cross-platform video editor with broad format support
+category: media
+tags:
+- video
+- editor
+- creative
+- timeline
+homepage: https://shotcut.org/
+icon: org.shotcut.Shotcut
+source_preference: flatpak
+packages:
+  arch: shotcut
+  flatpak:
+    id: org.shotcut.Shotcut
+detection:
+  commands:
+  - shotcut
+  flatpak: org.shotcut.Shotcut

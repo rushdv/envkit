@@ -1,0 +1,23 @@
+id: drawio
+name: Draw.io
+description: Security-first diagramming software for flowcharts, architecture, and
+  diagrams
+category: student
+tags:
+- diagrams
+- flowchart
+- architecture
+- uml
+homepage: https://www.drawio.com/
+icon: drawio
+source_preference: flatpak
+packages:
+  arch:
+    manager: yay
+    package: drawio-desktop-bin
+  flatpak:
+    id: com.jgraph.drawio.desktop
+detection:
+  commands:
+  - drawio
+  flatpak: com.jgraph.drawio.desktop

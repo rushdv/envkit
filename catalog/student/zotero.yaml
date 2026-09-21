@@ -1,0 +1,23 @@
+id: zotero
+name: Zotero
+description: Free, open-source research assistant and citation/bibliography manager
+category: student
+tags:
+- research
+- citations
+- bibliography
+- academic
+- papers
+homepage: https://www.zotero.org/
+icon: zotero
+source_preference: flatpak
+packages:
+  arch:
+    manager: yay
+    package: zotero-bin
+  flatpak:
+    id: org.zotero.Zotero
+detection:
+  commands:
+  - zotero
+  flatpak: org.zotero.Zotero

@@ -1,0 +1,21 @@
+id: gh
+name: GitHub CLI
+description: "GitHub\u2019s official command-line tool bringing PRs, issues, and actions\
+  \ to your terminal"
+category: development
+tags:
+- git
+- github
+- cli
+- pull-requests
+homepage: https://cli.github.com/
+icon: github
+source_preference: native
+packages:
+  fedora: gh
+  arch: github-cli
+  debian: gh
+  opensuse: gh
+detection:
+  commands:
+  - gh

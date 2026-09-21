@@ -1,0 +1,24 @@
+id: bruno
+name: Bruno
+description: Fast and git-friendly open-source API client for exploring and testing
+  APIs
+category: development
+tags:
+- api
+- rest
+- graphql
+- http
+- postman-alternative
+homepage: https://www.usebruno.com/
+icon: bruno
+source_preference: flatpak
+packages:
+  arch:
+    manager: yay
+    package: bruno-bin
+  flatpak:
+    id: use.bruno.Bruno
+detection:
+  commands:
+  - bruno
+  flatpak: use.bruno.Bruno

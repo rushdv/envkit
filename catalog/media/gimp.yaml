@@ -1,0 +1,25 @@
+id: gimp
+name: GIMP
+description: Cross-platform image editor for photo retouching, image composition,
+  and authoring
+category: media
+tags:
+- image
+- editor
+- photo
+- graphics
+- photoshop-alternative
+homepage: https://www.gimp.org/
+icon: gimp
+source_preference: native
+packages:
+  fedora: gimp
+  arch: gimp
+  debian: gimp
+  opensuse: gimp
+  flatpak:
+    id: org.gimp.GIMP
+detection:
+  commands:
+  - gimp
+  flatpak: org.gimp.GIMP

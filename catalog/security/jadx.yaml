@@ -1,0 +1,21 @@
+id: jadx
+name: JADX
+description: Dex to Java decompiler and graphical viewer for Android APK files
+category: security
+tags:
+- android
+- apk
+- decompiler
+- java
+- reversing
+homepage: https://github.com/skylot/jadx
+icon: jadx-gui
+source_preference: native
+packages:
+  arch:
+    manager: yay
+    package: jadx
+detection:
+  commands:
+  - jadx
+  - jadx-gui

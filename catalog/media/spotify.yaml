@@ -1,0 +1,23 @@
+id: spotify
+name: Spotify
+description: Digital music, podcast, and video service with access to millions of
+  songs
+category: media
+tags:
+- music
+- audio
+- streaming
+- podcast
+homepage: https://www.spotify.com/
+icon: spotify-client
+source_preference: flatpak
+packages:
+  arch:
+    manager: yay
+    package: spotify
+  flatpak:
+    id: com.spotify.Client
+detection:
+  commands:
+  - spotify
+  flatpak: com.spotify.Client

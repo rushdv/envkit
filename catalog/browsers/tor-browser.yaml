@@ -1,0 +1,25 @@
+id: tor-browser
+name: Tor Browser
+description: Protect your privacy and defend yourself against network surveillance
+  and censorship
+category: browsers
+tags:
+- browser
+- tor
+- privacy
+- anonymity
+- security
+homepage: https://www.torproject.org/
+icon: tor-browser
+source_preference: flatpak
+packages:
+  fedora: torbrowser-launcher
+  arch: torbrowser-launcher
+  debian: torbrowser-launcher
+  opensuse: torbrowser-launcher
+  flatpak:
+    id: com.github.micahflee.torbrowser-launcher
+detection:
+  commands:
+  - torbrowser-launcher
+  flatpak: com.github.micahflee.torbrowser-launcher

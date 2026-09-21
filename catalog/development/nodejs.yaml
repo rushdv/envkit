@@ -1,0 +1,22 @@
+id: nodejs
+name: Node.js
+description: JavaScript runtime built on Chrome's V8 engine
+category: development
+tags:
+- javascript
+- node
+- npm
+- runtime
+- web
+homepage: https://nodejs.org/
+icon: nodejs
+source_preference: native
+packages:
+  fedora: nodejs npm
+  arch: nodejs npm
+  debian: nodejs npm
+  opensuse: nodejs npm
+detection:
+  commands:
+  - node
+  - npm

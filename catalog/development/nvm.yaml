@@ -1,0 +1,20 @@
+id: nvm
+name: NVM (Node Version Manager)
+description: Simple bash script to manage multiple active Node.js versions
+category: development
+tags:
+- nodejs
+- nvm
+- version-manager
+- javascript
+homepage: https://github.com/nvm-sh/nvm
+icon: nodejs
+source_preference: script
+packages:
+  script:
+    command: curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh
+      | bash
+    requires_sudo: false
+detection:
+  paths:
+  - ~/.nvm/nvm.sh

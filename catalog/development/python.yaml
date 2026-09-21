@@ -1,0 +1,22 @@
+id: python
+name: Python 3 & Pip
+description: High-level, general-purpose programming language and pip package manager
+category: development
+tags:
+- python
+- pip
+- scripting
+- ai
+- backend
+homepage: https://www.python.org/
+icon: python
+source_preference: native
+packages:
+  fedora: python3 python3-pip python3-virtualenv
+  arch: python python-pip python-virtualenv
+  debian: python3 python3-pip python3-venv
+  opensuse: python3 python3-pip python3-virtualenv
+detection:
+  commands:
+  - python3
+  - pip3

@@ -1,0 +1,21 @@
+id: zoxide
+name: zoxide
+description: Smarter cd command inspired by z and autojump, remembers your favorite
+  dirs
+category: terminal
+tags:
+- cd
+- navigation
+- directory
+- cli
+homepage: https://github.com/ajeetdsouza/zoxide
+icon: utilities-terminal
+source_preference: native
+packages:
+  fedora: zoxide
+  arch: zoxide
+  debian: zoxide
+  opensuse: zoxide
+detection:
+  commands:
+  - zoxide

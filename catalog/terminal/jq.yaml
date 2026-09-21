@@ -1,0 +1,20 @@
+id: jq
+name: jq
+description: Lightweight and flexible command-line JSON processor
+category: terminal
+tags:
+- json
+- parser
+- cli
+- tools
+homepage: https://jqlang.github.io/jq/
+icon: utilities-terminal
+source_preference: native
+packages:
+  fedora: jq
+  arch: jq
+  debian: jq
+  opensuse: jq
+detection:
+  commands:
+  - jq

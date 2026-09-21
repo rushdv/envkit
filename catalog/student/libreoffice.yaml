@@ -1,0 +1,25 @@
+id: libreoffice
+name: LibreOffice
+description: Free and powerful open-source office suite for word processing, spreadsheets,
+  and presentations
+category: student
+tags:
+- office
+- documents
+- writer
+- calc
+- impress
+homepage: https://www.libreoffice.org/
+icon: libreoffice-startcenter
+source_preference: native
+packages:
+  fedora: libreoffice
+  arch: libreoffice-fresh
+  debian: libreoffice
+  opensuse: libreoffice
+  flatpak:
+    id: org.libreoffice.LibreOffice
+detection:
+  commands:
+  - libreoffice
+  flatpak: org.libreoffice.LibreOffice

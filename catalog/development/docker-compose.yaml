@@ -1,0 +1,21 @@
+id: docker-compose
+name: Docker Compose
+description: Tool for defining and running multi-container Docker applications
+category: development
+tags:
+- docker
+- containers
+- orchestration
+- compose
+homepage: https://docs.docker.com/compose/
+icon: docker
+source_preference: native
+packages:
+  fedora: docker-compose-plugin
+  arch: docker-compose
+  debian: docker-compose-plugin
+  opensuse: docker-compose
+detection:
+  commands:
+  - docker-compose
+  - docker

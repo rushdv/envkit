@@ -1,0 +1,24 @@
+id: xournalpp
+name: Xournal++
+description: Handwriting note-taking and PDF annotation software with stylus support
+category: student
+tags:
+- notes
+- handwriting
+- pdf
+- annotation
+- stylus
+homepage: https://xournalpp.github.io/
+icon: xournalpp
+source_preference: native
+packages:
+  fedora: xournalpp
+  arch: xournalpp
+  debian: xournalpp
+  opensuse: xournalpp
+  flatpak:
+    id: com.github.xournalpp.xournalpp
+detection:
+  commands:
+  - xournalpp
+  flatpak: com.github.xournalpp.xournalpp

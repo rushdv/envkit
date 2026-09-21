@@ -1,0 +1,22 @@
+id: btop
+name: btop
+description: Resource monitor that shows usage and stats for processor, memory, disks,
+  and network
+category: terminal
+tags:
+- monitor
+- htop
+- cpu
+- memory
+- cli
+homepage: https://github.com/aristocratos/btop
+icon: utilities-system-monitor
+source_preference: native
+packages:
+  fedora: btop
+  arch: btop
+  debian: btop
+  opensuse: btop
+detection:
+  commands:
+  - btop

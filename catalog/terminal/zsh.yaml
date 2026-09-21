@@ -1,0 +1,20 @@
+id: zsh
+name: Zsh Shell
+description: Extended Bourne shell with many improvements, themes, and plugin support
+category: terminal
+tags:
+- shell
+- zsh
+- terminal
+- cli
+homepage: https://www.zsh.org/
+icon: utilities-terminal
+source_preference: native
+packages:
+  fedora: zsh
+  arch: zsh
+  debian: zsh
+  opensuse: zsh
+detection:
+  commands:
+  - zsh

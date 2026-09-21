@@ -1,0 +1,23 @@
+id: zen-browser
+name: Zen Browser
+description: Beautiful, fast, and feature-rich Firefox fork with vertical tabs
+category: browsers
+tags:
+- browser
+- firefox
+- modern
+- tabs
+homepage: https://zen-browser.app/
+icon: zen-browser
+source_preference: flatpak
+packages:
+  arch:
+    manager: yay
+    package: zen-browser-bin
+  flatpak:
+    id: app.zen_browser.zen
+detection:
+  commands:
+  - zen-browser
+  - zen
+  flatpak: app.zen_browser.zen

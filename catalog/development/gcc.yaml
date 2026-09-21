@@ -1,0 +1,23 @@
+id: gcc
+name: GCC & Build Essentials
+description: GNU Compiler Collection C/C++ compilers, make, and base build tools
+category: development
+tags:
+- c
+- cpp
+- compiler
+- gcc
+- make
+homepage: https://gcc.gnu.org/
+icon: utilities-terminal
+source_preference: native
+packages:
+  fedora: gcc gcc-c++ make
+  arch: base-devel
+  debian: build-essential
+  opensuse: devel_basis
+detection:
+  commands:
+  - gcc
+  - g++
+  - make

@@ -1,0 +1,21 @@
+id: whois
+name: whois
+description: Intelligent client for the WHOIS directory service
+category: security
+tags:
+- whois
+- domain
+- recon
+- network
+- cli
+homepage: https://github.com/rfc1036/whois
+icon: utilities-terminal
+source_preference: native
+packages:
+  fedora: whois
+  arch: whois
+  debian: whois
+  opensuse: whois
+detection:
+  commands:
+  - whois

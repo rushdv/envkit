@@ -1,0 +1,23 @@
+id: obsidian
+name: Obsidian
+description: Powerful and extensible knowledge base and markdown note-taking app
+category: student
+tags:
+- notes
+- markdown
+- knowledge
+- pkm
+- academic
+homepage: https://obsidian.md/
+icon: obsidian
+source_preference: flatpak
+packages:
+  arch:
+    manager: yay
+    package: obsidian
+  flatpak:
+    id: md.obsidian.Obsidian
+detection:
+  commands:
+  - obsidian
+  flatpak: md.obsidian.Obsidian

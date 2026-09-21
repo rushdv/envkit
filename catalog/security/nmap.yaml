@@ -1,0 +1,20 @@
+id: nmap
+name: Nmap
+description: Free and open source utility for network discovery and security auditing
+category: security
+tags:
+- security
+- network
+- scanner
+- recon
+homepage: https://nmap.org/
+icon: network-workgroup
+source_preference: native
+packages:
+  fedora: nmap
+  arch: nmap
+  debian: nmap
+  opensuse: nmap
+detection:
+  commands:
+  - nmap

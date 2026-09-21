@@ -1,0 +1,24 @@
+id: burpsuite
+name: Burp Suite Community
+description: Leading graphical tool for testing web application security and proxying
+  traffic
+category: security
+tags:
+- web
+- pentest
+- proxy
+- security
+- vulnerability
+homepage: https://portswigger.net/burp/communitydownload
+icon: burpsuite
+source_preference: flatpak
+packages:
+  arch:
+    manager: yay
+    package: burpsuite
+  flatpak:
+    id: net.portswigger.BurpSuiteCommunity
+detection:
+  commands:
+  - burpsuite
+  flatpak: net.portswigger.BurpSuiteCommunity

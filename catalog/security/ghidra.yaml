@@ -1,0 +1,23 @@
+id: ghidra
+name: NSA Ghidra
+description: Software reverse engineering (SRE) suite developed by the NSA
+category: security
+tags:
+- reversing
+- decompiler
+- binary
+- security
+- nsa
+homepage: https://ghidra-sre.org/
+icon: ghidra
+source_preference: flatpak
+packages:
+  arch:
+    manager: yay
+    package: ghidra
+  flatpak:
+    id: org.ghidra_sre.Ghidra
+detection:
+  commands:
+  - ghidra
+  flatpak: org.ghidra_sre.Ghidra

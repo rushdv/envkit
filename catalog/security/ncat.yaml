@@ -1,0 +1,21 @@
+id: ncat
+name: ncat
+description: Modern reimplementation of Netcat with SSL, IPv6, and proxy support
+category: security
+tags:
+- netcat
+- sockets
+- network
+- cli
+homepage: https://nmap.org/ncat/
+icon: utilities-terminal
+source_preference: native
+packages:
+  fedora: ncat
+  arch: ncat
+  debian: netcat-openbsd
+  opensuse: netcat-openbsd
+detection:
+  commands:
+  - ncat
+  - nc

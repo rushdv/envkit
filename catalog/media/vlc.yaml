@@ -1,0 +1,23 @@
+id: vlc
+name: VLC Media Player
+description: Universal open-source multimedia player that plays most multimedia files
+category: media
+tags:
+- video
+- player
+- audio
+- media
+homepage: https://www.videolan.org/vlc/
+icon: vlc
+source_preference: native
+packages:
+  fedora: vlc
+  arch: vlc
+  debian: vlc
+  opensuse: vlc
+  flatpak:
+    id: org.videolan.VLC
+detection:
+  commands:
+  - vlc
+  flatpak: org.videolan.VLC

@@ -1,0 +1,21 @@
+id: redis
+name: Redis CLI
+description: In-memory data structure store used as a database, cache, and message
+  broker
+category: development
+tags:
+- nosql
+- cache
+- redis
+- in-memory
+homepage: https://redis.io/
+icon: redis
+source_preference: native
+packages:
+  fedora: redis
+  arch: redis
+  debian: redis-tools
+  opensuse: redis
+detection:
+  commands:
+  - redis-cli

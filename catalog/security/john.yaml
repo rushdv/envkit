@@ -1,0 +1,21 @@
+id: john
+name: John the Ripper
+description: Fast and customizable password cracker tool for security testing
+category: security
+tags:
+- password
+- cracking
+- security
+- hashes
+- cli
+homepage: https://www.openwall.com/john/
+icon: utilities-terminal
+source_preference: native
+packages:
+  fedora: john
+  arch: john
+  debian: john
+  opensuse: john
+detection:
+  commands:
+  - john

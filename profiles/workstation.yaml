@@ -1,0 +1,38 @@
+id: workstation
+name: Complete Workstation
+description: Comprehensive daily-driver workstation with development, terminal power tools, and utilities
+apps:
+  - firefox
+  - brave
+  - vscode
+  - git
+  - gh
+  - docker
+  - docker-compose
+  - nodejs
+  - python
+  - zsh
+  - starship
+  - kitty
+  - tmux
+  - fzf
+  - ripgrep
+  - fd
+  - bat
+  - eza
+  - zoxide
+  - btop
+  - fastfetch
+  - nerd-fonts
+  - obsidian
+  - libreoffice
+  - vlc
+  - bitwarden
+  - qbittorrent
+  - telegram
+config:
+  git_identity: true
+  ssh_keygen: false
+  symlink_dotfiles: true
+  nerd_fonts: true
+  vscode_extensions: true

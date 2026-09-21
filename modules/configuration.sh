@@ -1,0 +1,1 @@
+../scripts/07-config.sh

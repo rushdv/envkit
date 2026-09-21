@@ -1,0 +1,21 @@
+id: postgresql
+name: PostgreSQL
+description: Powerful, open source object-relational database system
+category: development
+tags:
+- sql
+- database
+- postgres
+- rdbms
+homepage: https://www.postgresql.org/
+icon: postgresql
+source_preference: native
+packages:
+  fedora: postgresql postgresql-server
+  arch: postgresql
+  debian: postgresql postgresql-client
+  opensuse: postgresql postgresql-server
+detection:
+  commands:
+  - psql
+  - postgres

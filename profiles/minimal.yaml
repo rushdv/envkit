@@ -1,0 +1,11 @@
+id: minimal
+name: Minimal Essentials
+description: Lightweight base setup with essential tools and browser
+apps:
+  - git
+  - firefox
+config:
+  git_identity: false
+  ssh_keygen: false
+  symlink_dotfiles: false
+  nerd_fonts: false

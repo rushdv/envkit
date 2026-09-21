@@ -1,0 +1,23 @@
+id: firefox
+name: Mozilla Firefox
+description: Fast, private, and independent web browser by Mozilla
+category: browsers
+tags:
+- browser
+- web
+- internet
+- mozilla
+homepage: https://www.mozilla.org/firefox/
+icon: firefox
+source_preference: native
+packages:
+  fedora: firefox
+  arch: firefox
+  debian: firefox-esr
+  opensuse: MozillaFirefox
+  flatpak:
+    id: org.mozilla.firefox
+detection:
+  commands:
+  - firefox
+  flatpak: org.mozilla.firefox

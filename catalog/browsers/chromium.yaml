@@ -1,0 +1,24 @@
+id: chromium
+name: Chromium
+description: Open-source browser project that powers Google Chrome and others
+category: browsers
+tags:
+- browser
+- open-source
+- web
+- google
+homepage: https://www.chromium.org/
+icon: chromium
+source_preference: native
+packages:
+  fedora: chromium
+  arch: chromium
+  debian: chromium
+  opensuse: chromium
+  flatpak:
+    id: org.chromium.Chromium
+detection:
+  commands:
+  - chromium
+  - chromium-browser
+  flatpak: org.chromium.Chromium

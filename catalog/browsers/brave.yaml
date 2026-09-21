@@ -1,0 +1,23 @@
+id: brave
+name: Brave Browser
+description: Privacy-focused browser that blocks trackers and ads automatically
+category: browsers
+tags:
+- browser
+- privacy
+- chromium
+- adblock
+homepage: https://brave.com/
+icon: brave-browser
+source_preference: flatpak
+packages:
+  arch:
+    manager: yay
+    package: brave-bin
+  flatpak:
+    id: com.brave.Browser
+detection:
+  commands:
+  - brave-browser
+  - brave
+  flatpak: com.brave.Browser

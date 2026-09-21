@@ -1,0 +1,20 @@
+id: git
+name: Git
+description: Distributed version control system designed for speed and data integrity
+category: development
+tags:
+- vcs
+- git
+- version-control
+- cli
+homepage: https://git-scm.com/
+icon: git
+source_preference: native
+packages:
+  fedora: git
+  arch: git
+  debian: git
+  opensuse: git
+detection:
+  commands:
+  - git

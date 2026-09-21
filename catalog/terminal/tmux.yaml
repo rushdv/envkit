@@ -1,0 +1,20 @@
+id: tmux
+name: tmux
+description: Terminal multiplexer enabling multi-window terminal sessions
+category: terminal
+tags:
+- multiplexer
+- terminal
+- tmux
+- productivity
+homepage: https://github.com/tmux/tmux/wiki
+icon: utilities-terminal
+source_preference: native
+packages:
+  fedora: tmux
+  arch: tmux
+  debian: tmux
+  opensuse: tmux
+detection:
+  commands:
+  - tmux

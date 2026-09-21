@@ -1,0 +1,23 @@
+id: evince
+name: Evince
+description: GNOME document viewer for multiple document formats
+category: student
+tags:
+- pdf
+- viewer
+- gnome
+- documents
+homepage: https://wiki.gnome.org/Apps/Evince
+icon: org.gnome.Evince
+source_preference: native
+packages:
+  fedora: evince
+  arch: evince
+  debian: evince
+  opensuse: evince
+  flatpak:
+    id: org.gnome.Evince
+detection:
+  commands:
+  - evince
+  flatpak: org.gnome.Evince

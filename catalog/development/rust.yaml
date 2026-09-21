@@ -1,0 +1,23 @@
+id: rust
+name: Rust (rustup)
+description: Systems programming language focusing on safety, speed, and concurrency
+category: development
+tags:
+- rust
+- cargo
+- systems
+- performance
+homepage: https://www.rust-lang.org/
+icon: rust
+source_preference: script
+packages:
+  script:
+    command: curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s --
+      -y
+    requires_sudo: false
+detection:
+  commands:
+  - rustc
+  - cargo
+  paths:
+  - ~/.cargo/bin/rustc
